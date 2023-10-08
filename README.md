@@ -19,7 +19,6 @@ DB_PASSWORD=your_db_password
 DB_HOST=your_db_host
 DB_PORT=your_db_port
 DB_NAME=your_db_name
-VIN_SERVICE_URL=your_vin_service_url
 ```
 3. Запустить docker-compose:
 ```shell
