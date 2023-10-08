@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  vin-app:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    command: uvicorn main:app --host 0.0.0.0 --port 8000
+    depends_on:
+      - vin-db
+
+  vin-db:
+    image: postgres:14.6-alpine3.17
+    volumes:
+      - $HOME/postgresql/vin_db:/var/lib/postgresql/data/
+    env_file:
+      - .env

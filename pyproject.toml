@@ -8,6 +8,15 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 fastapi = "^0.103.2"
+python-dotenv = "^1.0.0"
+uvicorn = "^0.23.2"
+asyncpg = "^0.28.0"
+databases = "^0.8.0"
+pydantic-settings = "^2.0.3"
+aiohttp = "^3.8.5"
+orjson = "^3.9.7"
+alembic = "^1.12.0"
+psycopg2-binary = "^2.9.9"
 
 
 [build-system]
